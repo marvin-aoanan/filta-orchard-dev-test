@@ -1,0 +1,66 @@
+/* The navigation menu */
+.menu-top-container {
+    background-color: #333;
+
+}
+.navbar {
+    width: 75%;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul, .navbar li {
+    list-style: none;
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+
+.sub-menu {
+    display: none;
+    border: 1px solid #333;
+}
+.menu-item-has-children::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 24px;
+    right: 0px;
+    width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 6px solid white;
+}
+
+.menu-item-has-children:hover .sub-menu {
+    display: block;
+    position: absolute;
+    top: 40px;
+    background: white;
+    z-index: 99;
+    
+}
+.menu-item .sub-menu a {
+    color: #333;
+    white-space: nowrap;
+    padding: 8px 24px;
+    border-bottom: 1px solid #333;
+}
+
+/* Navigation links */
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* The subnavigation menu */
+.subnav {
+    float: left;
+    overflow: hidden;
+}
+

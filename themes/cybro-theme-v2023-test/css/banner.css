@@ -1,0 +1,17 @@
+.banner {
+    width: 100%;
+    min-height: 400px;
+    display: block;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.banner-root-a {
+    background-image: url('../images/banner-a.png');
+}
+
+.banner-root-b {
+    background-image: url('../images/banner-b.png');
+}
